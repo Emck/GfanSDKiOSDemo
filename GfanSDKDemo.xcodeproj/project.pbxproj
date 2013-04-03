@@ -14,6 +14,7 @@
 		886E742116BB66EB0077D7B7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 886E742016BB66EB0077D7B7 /* libz.dylib */; };
 		886E742516BB676B0077D7B7 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 886E742316BB676B0077D7B7 /* libcrypto.a */; };
 		886E742616BB676B0077D7B7 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 886E742416BB676B0077D7B7 /* libssl.a */; };
+		88B1C568170BFD7B00CD73DE /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B1C564170BFD7B00CD73DE /* libTestFlight.a */; };
 		88B7A72F16BB5DCF00B7B345 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B7A72E16BB5DCF00B7B345 /* UIKit.framework */; };
 		88B7A73116BB5DCF00B7B345 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B7A73016BB5DCF00B7B345 /* Foundation.framework */; };
 		88B7A73316BB5DCF00B7B345 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B7A73216BB5DCF00B7B345 /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 		886E742016BB66EB0077D7B7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		886E742316BB676B0077D7B7 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = SDK/libcrypto.a; sourceTree = "<group>"; };
 		886E742416BB676B0077D7B7 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = SDK/libssl.a; sourceTree = "<group>"; };
+		88B1C564170BFD7B00CD73DE /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		88B1C567170BFD7B00CD73DE /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		88B7A72B16BB5DCF00B7B345 /* GfanSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GfanSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B7A72E16BB5DCF00B7B345 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		88B7A73016BB5DCF00B7B345 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +76,7 @@
 				886E742516BB676B0077D7B7 /* libcrypto.a in Frameworks */,
 				886E742616BB676B0077D7B7 /* libssl.a in Frameworks */,
 				88014AC417042F6F0095718D /* libGfanSDK.a in Frameworks */,
+				88B1C568170BFD7B00CD73DE /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,10 +99,21 @@
 		886E742216BB67500077D7B7 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				88B1C563170BFD7B00CD73DE /* TestFlightSDK */,
 				886E742316BB676B0077D7B7 /* libcrypto.a */,
 				886E742416BB676B0077D7B7 /* libssl.a */,
 			);
 			name = SDK;
+			sourceTree = "<group>";
+		};
+		88B1C563170BFD7B00CD73DE /* TestFlightSDK */ = {
+			isa = PBXGroup;
+			children = (
+				88B1C564170BFD7B00CD73DE /* libTestFlight.a */,
+				88B1C567170BFD7B00CD73DE /* TestFlight.h */,
+			);
+			name = TestFlightSDK;
+			path = SDK/TestFlightSDK;
 			sourceTree = "<group>";
 		};
 		88B7A72216BB5DCF00B7B345 = {
@@ -294,8 +309,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "AFB91B8C-E2FF-4614-88D4-4D51C4671C62";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AFB91B8C-E2FF-4614-88D4-4D51C4671C62";
+				PROVISIONING_PROFILE = "97A9E6A7-6A89-425D-83FF-B18552EC6030";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "97A9E6A7-6A89-425D-83FF-B18552EC6030";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,8 +337,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "AFB91B8C-E2FF-4614-88D4-4D51C4671C62";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AFB91B8C-E2FF-4614-88D4-4D51C4671C62";
+				PROVISIONING_PROFILE = "97A9E6A7-6A89-425D-83FF-B18552EC6030";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "97A9E6A7-6A89-425D-83FF-B18552EC6030";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -343,11 +358,12 @@
 					"$(inherited)",
 					"\"/Users/emck/Library/Developer/Xcode/DerivedData/iOS-dbqadkguuedybyfccogogsdbjqob/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/GfanSDKDemo/SDK\"",
+					"\"$(SRCROOT)/GfanSDKDemo/SDK/TestFlightSDK\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "AFB91B8C-E2FF-4614-88D4-4D51C4671C62";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AFB91B8C-E2FF-4614-88D4-4D51C4671C62";
+				PROVISIONING_PROFILE = "97A9E6A7-6A89-425D-83FF-B18552EC6030";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "97A9E6A7-6A89-425D-83FF-B18552EC6030";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -365,11 +381,12 @@
 					"$(inherited)",
 					"\"/Users/emck/Library/Developer/Xcode/DerivedData/iOS-dbqadkguuedybyfccogogsdbjqob/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/GfanSDKDemo/SDK\"",
+					"\"$(SRCROOT)/GfanSDKDemo/SDK/TestFlightSDK\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "AFB91B8C-E2FF-4614-88D4-4D51C4671C62";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AFB91B8C-E2FF-4614-88D4-4D51C4671C62";
+				PROVISIONING_PROFILE = "97A9E6A7-6A89-425D-83FF-B18552EC6030";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "97A9E6A7-6A89-425D-83FF-B18552EC6030";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

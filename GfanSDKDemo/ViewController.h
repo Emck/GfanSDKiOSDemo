@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#define TestFlightON
+
+#ifdef TestFlightON
+    #import "TestFlight.h"
+#endif
+
 //------------------------GfanSDK for iOS------------- Add -----
 #import "GfanSDK.h"
 // 主窗口需增加GfanSDKDelegate协议

@@ -15,7 +15,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //[[UIApplication sharedApplication] setStatusBarHidden:YES];      // Hidden StatusBar
-
+    #ifdef TestFlightON
+        [TestFlight takeOff:@"c1e4d858-5be5-4750-8aa0-b2d454bcc16f"];
+    #endif
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
