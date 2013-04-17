@@ -27,7 +27,6 @@
 {
     NSInteger Count;                // 用于本Demo的接口调用计数,正式接入可忽略
     
-    
     GfanSDKResponse *SDKResponse;   // SDK的状态(用于各接口回调)
 }
 
@@ -41,7 +40,7 @@
     [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(GfanSDKApplePayCallBack:) name: @"GfanSDKApplePayNotification" object: nil];
     //------------------------GfanSDK for iOS------------- End -----
     
-    MessageView.text = @"说明: \n1.接口调用的返回,均为GfanSDKResponse对象\n2.由于SDK使用了交叉编译,所以请保证调用该SDK的类文件扩展名为.mm\n3.为确保支付宝快捷方式可回调该Demo,请检查GfanSDKDemo-Info.plist中,是否加入了URL Types参数(可参考本Demo,Item 0须与当前Demo的应用名称相符,否则会导致支付宝接口无法回调支付结果)\n4.AppDelegate.m中需插入Gfan iOS SDK相关代码\n5.本SDK需要用到QuartzCore.framework,libz.dylib,libcrypto.a,libssl.a";    
+    MessageView.text = @"说明: \n1.接口调用的返回,均为GfanSDKResponse对象\n2.由于SDK使用了交叉编译,所以请保证调用该SDK的类文件扩展名为.mm\n3.为确保支付宝快捷方式可回调该Demo,请检查GfanSDKDemo-Info.plist中,是否加入了URL Types参数(可参考本Demo,Item 0须与当前Demo的应用名称相符,否则会导致支付宝接口无法回调支付结果)\n4.AppDelegate.m中需插入Gfan iOS SDK相关代码\n5.本SDK需要用到QuartzCore.framework,libz.dylib,libcrypto.a,libssl.a";
 }
 
 //------------------------GfanSDK for iOS------------- Add -----
@@ -105,9 +104,10 @@
     OrderInfoByGfan *Order = [[OrderInfoByGfan alloc]init];
     //Order.OrderID = @"1234567890";
     Order.PayAppKey = @"1043071178";        // 支付Key,请通过机锋开发者后台申请支付Appkey(http://dev.gfan.com/Aspx/DevApp/AskKeyStep1.aspx 须先注册为开发者)
+    Order.InAppSandbox = YES;               // In-App支付环境 (Yes=沙箱,NO或者不指定则为正式环境)
 
     // "Payment12"是In-App支付产品的ID,必须对应为苹果开发者账号发布的In-App产品的ID
-    [[[GfanSDK alloc] init:self Delegate:self CPID:@"iOSTest"] doInAppBuyProduct:@"Diamond1" OrderInfo:Order];
+    [[[GfanSDK alloc] init:self Delegate:self CPID:@"iOSTest"] doInAppBuyProduct:@"Pay12" OrderInfo:Order];
 }
 
 // 所有接口回调集中在此托管方法,相关文档请参考 GfanSDK.h文件
