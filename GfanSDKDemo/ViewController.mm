@@ -107,7 +107,7 @@
     Order.InAppSandbox = YES;               // In-App支付环境 (Yes=沙箱,NO或者不指定则为正式环境)
 
     // "Payment12"是In-App支付产品的ID,必须对应为苹果开发者账号发布的In-App产品的ID
-    [[[GfanSDK alloc] init:self Delegate:self CPID:@"iOSTest"] doInAppBuyProduct:@"Pay12" OrderInfo:Order];
+    [[[GfanSDK alloc] init:self Delegate:self CPID:@"iOSTest"] doInAppBuyProduct:@"bt_diamond1" OrderInfo:Order];
 }
 
 // 所有接口回调集中在此托管方法,相关文档请参考 GfanSDK.h文件
