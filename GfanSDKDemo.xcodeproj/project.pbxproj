@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88014AC417042F6F0095718D /* libGfanSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88014AC317042F6F0095718D /* libGfanSDK.a */; };
 		88014AC6170433150095718D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 88014AC5170433150095718D /* README.md */; };
 		8819CF0C16E1ECA500B1B8A9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8819CF0B16E1ECA500B1B8A9 /* StoreKit.framework */; };
 		886E741F16BB66DB0077D7B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886E741E16BB66DB0077D7B7 /* QuartzCore.framework */; };
@@ -27,14 +26,10 @@
 		88B7A74B16BB5DCF00B7B345 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B7A74916BB5DCF00B7B345 /* ViewController_iPhone.xib */; };
 		88B7A74E16BB5DCF00B7B345 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88B7A74C16BB5DCF00B7B345 /* ViewController_iPad.xib */; };
 		88B7A81D16BB63FC00B7B345 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88B7A81C16BB63FC00B7B345 /* ViewController.mm */; };
+		88E2AC6B17394E330059B9D6 /* libGfanSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E2AC6A17394E330059B9D6 /* libGfanSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		88014ABF17042F660095718D /* GfanSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfanSDK.h; path = "../../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-dbqadkguuedybyfccogogsdbjqob/Build/Products/Debug-iphoneos/include/GfanSDK/GfanSDK.h"; sourceTree = "<group>"; };
-		88014AC017042F660095718D /* GfanSDKResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfanSDKResponse.h; path = "../../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-dbqadkguuedybyfccogogsdbjqob/Build/Products/Debug-iphoneos/include/GfanSDK/GfanSDKResponse.h"; sourceTree = "<group>"; };
-		88014AC117042F660095718D /* OrderInfoByGfan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OrderInfoByGfan.h; path = "../../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-dbqadkguuedybyfccogogsdbjqob/Build/Products/Debug-iphoneos/include/GfanSDK/OrderInfoByGfan.h"; sourceTree = "<group>"; };
-		88014AC217042F660095718D /* UserInfoByGfan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserInfoByGfan.h; path = "../../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-dbqadkguuedybyfccogogsdbjqob/Build/Products/Debug-iphoneos/include/GfanSDK/UserInfoByGfan.h"; sourceTree = "<group>"; };
-		88014AC317042F6F0095718D /* libGfanSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGfanSDK.a; path = "../../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-dbqadkguuedybyfccogogsdbjqob/Build/Products/Debug-iphoneos/libGfanSDK.a"; sourceTree = "<group>"; };
 		88014AC5170433150095718D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		8819CF0B16E1ECA500B1B8A9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		886E741E16BB66DB0077D7B7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -60,6 +55,11 @@
 		88B7A74A16BB5DCF00B7B345 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		88B7A74D16BB5DCF00B7B345 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		88B7A81C16BB63FC00B7B345 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		88E2AC6617394E270059B9D6 /* GfanSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfanSDK.h; path = "../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-egxlnyxwgczmuffknilrgcautlxj/Build/Products/Debug-iphoneos/include/GfanSDK/GfanSDK.h"; sourceTree = "<group>"; };
+		88E2AC6717394E270059B9D6 /* GfanSDKResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GfanSDKResponse.h; path = "../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-egxlnyxwgczmuffknilrgcautlxj/Build/Products/Debug-iphoneos/include/GfanSDK/GfanSDKResponse.h"; sourceTree = "<group>"; };
+		88E2AC6817394E270059B9D6 /* OrderInfoByGfan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OrderInfoByGfan.h; path = "../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-egxlnyxwgczmuffknilrgcautlxj/Build/Products/Debug-iphoneos/include/GfanSDK/OrderInfoByGfan.h"; sourceTree = "<group>"; };
+		88E2AC6917394E270059B9D6 /* UserInfoByGfan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserInfoByGfan.h; path = "../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-egxlnyxwgczmuffknilrgcautlxj/Build/Products/Debug-iphoneos/include/GfanSDK/UserInfoByGfan.h"; sourceTree = "<group>"; };
+		88E2AC6A17394E330059B9D6 /* libGfanSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGfanSDK.a; path = "../../../../../../Users/emck/Library/Developer/Xcode/DerivedData/iOS-egxlnyxwgczmuffknilrgcautlxj/Build/Products/Debug-iphoneos/libGfanSDK.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 				88B7A73316BB5DCF00B7B345 /* CoreGraphics.framework in Frameworks */,
 				886E742516BB676B0077D7B7 /* libcrypto.a in Frameworks */,
 				886E742616BB676B0077D7B7 /* libssl.a in Frameworks */,
-				88014AC417042F6F0095718D /* libGfanSDK.a in Frameworks */,
 				88B1C568170BFD7B00CD73DE /* libTestFlight.a in Frameworks */,
+				88E2AC6B17394E330059B9D6 /* libGfanSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +86,11 @@
 		88014ABE17042F390095718D /* GfanSDK */ = {
 			isa = PBXGroup;
 			children = (
-				88014ABF17042F660095718D /* GfanSDK.h */,
-				88014AC017042F660095718D /* GfanSDKResponse.h */,
-				88014AC117042F660095718D /* OrderInfoByGfan.h */,
-				88014AC217042F660095718D /* UserInfoByGfan.h */,
-				88014AC317042F6F0095718D /* libGfanSDK.a */,
+				88E2AC6A17394E330059B9D6 /* libGfanSDK.a */,
+				88E2AC6617394E270059B9D6 /* GfanSDK.h */,
+				88E2AC6717394E270059B9D6 /* GfanSDKResponse.h */,
+				88E2AC6817394E270059B9D6 /* OrderInfoByGfan.h */,
+				88E2AC6917394E270059B9D6 /* UserInfoByGfan.h */,
 			);
 			name = GfanSDK;
 			path = ..;
@@ -309,8 +309,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "548581DE-3613-41A5-9890-0B28D6BD2E82";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "548581DE-3613-41A5-9890-0B28D6BD2E82";
+				PROVISIONING_PROFILE = "71C60A31-EA46-473C-9464-F5B3B14B115F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71C60A31-EA46-473C-9464-F5B3B14B115F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,8 +328,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gfan Games (S634A3R4GC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gfan Games (S634A3R4GC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gfan Games (GPGMYRGYPN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gfan Games (GPGMYRGYPN)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -337,8 +337,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "071A61C8-5E15-4738-B9B3-0F497507D4AE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "071A61C8-5E15-4738-B9B3-0F497507D4AE";
+				PROVISIONING_PROFILE = "71C60A31-EA46-473C-9464-F5B3B14B115F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71C60A31-EA46-473C-9464-F5B3B14B115F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -359,11 +359,12 @@
 					"\"/Users/emck/Library/Developer/Xcode/DerivedData/iOS-dbqadkguuedybyfccogogsdbjqob/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/GfanSDKDemo/SDK\"",
 					"\"$(SRCROOT)/GfanSDKDemo/SDK/TestFlightSDK\"",
+					"\"/Users/emck/Library/Developer/Xcode/DerivedData/iOS-egxlnyxwgczmuffknilrgcautlxj/Build/Products/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "548581DE-3613-41A5-9890-0B28D6BD2E82";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "548581DE-3613-41A5-9890-0B28D6BD2E82";
+				PROVISIONING_PROFILE = "71C60A31-EA46-473C-9464-F5B3B14B115F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71C60A31-EA46-473C-9464-F5B3B14B115F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -371,8 +372,8 @@
 		88B7A75316BB5DCF00B7B345 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gfan Games (S634A3R4GC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gfan Games (S634A3R4GC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gfan Games (GPGMYRGYPN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gfan Games (GPGMYRGYPN)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GfanSDKDemo/GfanSDKDemo-Prefix.pch";
 				INFOPLIST_FILE = "GfanSDKDemo/GfanSDKDemo-Info.plist";
@@ -382,11 +383,12 @@
 					"\"/Users/emck/Library/Developer/Xcode/DerivedData/iOS-dbqadkguuedybyfccogogsdbjqob/Build/Products/Debug-iphoneos\"",
 					"\"$(SRCROOT)/GfanSDKDemo/SDK\"",
 					"\"$(SRCROOT)/GfanSDKDemo/SDK/TestFlightSDK\"",
+					"\"/Users/emck/Library/Developer/Xcode/DerivedData/iOS-egxlnyxwgczmuffknilrgcautlxj/Build/Products/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "071A61C8-5E15-4738-B9B3-0F497507D4AE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "071A61C8-5E15-4738-B9B3-0F497507D4AE";
+				PROVISIONING_PROFILE = "71C60A31-EA46-473C-9464-F5B3B14B115F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71C60A31-EA46-473C-9464-F5B3B14B115F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
