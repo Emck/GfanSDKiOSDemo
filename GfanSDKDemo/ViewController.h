@@ -33,6 +33,7 @@
 - (IBAction)onClickStatusButton:(id)sender;                 // 登录状态检查接口调用演示
 - (IBAction)onClickPayButton:(id)sender;                    // 支付接口调用演示
 - (IBAction)onClickBuyInAppButton:(id)sender;               // 苹果In-App支付接口调用演示
+- (IBAction)onClickWebViewButton:(id)sender;                // WebView功能
 
 - (IBAction)onClickCleanButton:(id)sender;                  // 清除本Demo演示中的Log信息
 

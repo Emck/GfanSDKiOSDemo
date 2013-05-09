@@ -135,6 +135,10 @@
             case APIdoInAppBuyProduct:
                 message = [NSString stringWithFormat:@"%3d 苹果In-App支付接口 成功,返回对象:%@\n",Count,Response.GfanInfo];
                 break;
+            case APIdoWebView:
+                message = [NSString stringWithFormat:@"%3d 调用WebView成功,返回对象:%@\n",Count,Response.GfanInfo];
+                //如果是APIdoWebView接口调用，则Response.GfanInfo返回的是字符串，包含Web点击事件指定的Url（可携带参数）
+                break;
             default:
                 break;
         }
@@ -152,6 +156,11 @@
 //以下代码与接入无关
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
+- (IBAction)onClickWebViewButton:(id)sender                // WebView功能
+{
+    [[[GfanSDK alloc] init:self Delegate:self CPID:@"iOSTest"] doWebView:@"http://test.apptem.com/webviewdemo" Width:260 Height:290];
+}
+
 - (IBAction)onClickCleanButton:(id)sender
 {
     MessageView.text = @"";
