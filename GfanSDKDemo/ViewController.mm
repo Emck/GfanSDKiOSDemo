@@ -102,8 +102,8 @@
 - (IBAction)onClickBuyInAppButton:(id)sender
 {
     OrderInfoByGfan *Order = [[OrderInfoByGfan alloc]init];
-    //Order.OrderID = @"1234567890";
-    Order.PayAppKey = @"1043071178";        // 支付Key,请通过机锋开发者后台申请支付Appkey(http://dev.gfan.com/Aspx/DevApp/AskKeyStep1.aspx 须先注册为开发者)
+    Order.PayAppKey = @"1865019395";
+    //Order.PayAppKey = @"1043071178";        // 支付Key,请通过机锋开发者后台申请支付Appkey(http://dev.gfan.com/Aspx/DevApp/AskKeyStep1.aspx 须先注册为开发者)
     Order.InAppSandbox = YES;               // In-App支付环境 (Yes=沙箱,NO或者不指定则为正式环境)
 
     // "Payment12"是In-App支付产品的ID,必须对应为苹果开发者账号发布的In-App产品的ID
